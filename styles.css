@@ -1,0 +1,124 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: solid;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  /* z-index:1; */
+  border-color: rgba(0, 22, 22, 0.4);
+  padding: 0;
+  background-color: #ffff;
+}
+
+#navbar ul {
+  position: relative;
+  height: 80%;
+  padding: 0;
+  overflow: scroll;
+}
+#navbar > ul > li {
+  list-style: none;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid black;
+  position: relative;
+  color: black;
+  font-size: 17px;
+}
+
+#navbar > ul li a[href="#Introduction"] {
+  border-top: 1px solid black;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  color: black;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+header {
+  display: block;
+  text-align: left;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 25px;
+}
+code {
+  display: block;
+  white-space: preline;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  line-height: 2;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+}
+.main-section {
+  position: relative;
+  padding: 20px;
+}
+
+#navbar .nav-link {
+  clear: both;
+}
+@media (max-width: 560px) {
+  #navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+    z-index: 1;
+    margin-bottom: 20px;
+    clear: both;
+  }
+  #navbar ul li {
+    display: block;
+    overflow: scroll;
+    width: 100%;
+
+    border-top: 1px solid black;
+    position: relative;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+  }
+  #main-doc {
+    display: block;
+    margin-top: 100px;
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #main-doc .main-section {
+    position: relative;
+
+    margin-top: 10px;
+  }
+}
+
+#navbar #Reference {
+  border: 3px solid pink;
+}
