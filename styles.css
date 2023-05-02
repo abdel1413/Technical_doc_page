@@ -31,12 +31,19 @@ body {
   position: relative;
   color: black;
   font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  word-spacing: 0.1em;
 }
 
 #navbar > ul li a[href="#Introduction"] {
   border-top: 1px solid black;
 }
 
+#navbar header {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
 #navbar a {
   text-decoration: none;
   display: block;
